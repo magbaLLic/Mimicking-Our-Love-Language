@@ -1,1 +1,1 @@
-print("Merhaba İrem!")
+print("Merhaba İrem ve Çağın!")

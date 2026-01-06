@@ -4,4 +4,4 @@ x = 10
 
 y = 20
 
-toplam = x + y
+toplam = 0 

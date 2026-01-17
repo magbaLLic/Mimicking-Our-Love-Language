@@ -1,0 +1,25 @@
+{
+  "ner": {
+    "model_name": "akdeniz27/bert-base-turkish-cased-ner",
+    "min_score": 0.6,
+    "aggregation_strategy": "simple"
+  },
+  "sentiment": {
+    "model_name": "savasy/bert-base-turkish-sentiment-cased"
+  },
+  "pii": {
+    "mask_iban": true,
+    "mask_media": true,
+    "mask_emails": false,
+    "mask_phone_numbers": false
+  },
+  "export": {
+    "default_format": "json",
+    "output_directory": "exports"
+  },
+  "visualization": {
+    "figure_size": [10, 6],
+    "dpi": 300,
+    "style": "whitegrid"
+  }
+}

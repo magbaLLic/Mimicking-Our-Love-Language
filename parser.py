@@ -8,8 +8,8 @@ messages = {
 
 def sanitize_messages(messages):
     sanitized = {}
-    for author, msgs in messages.items():
-        sanitized_msgs = [mask_iban(msg) for msg in msgs]
+    for author, msgs in messages.items(): # her yazar için
+        sanitized_msgs = [mask_iban(msg) for msg in msgs] # mask_iban uygulama
         sanitized_msgs = [mask_media(msg) for msg in sanitized_msgs]  # mask_media çıktısını güncelle
         sanitized[author] = sanitized_msgs
     return sanitized

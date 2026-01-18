@@ -7,12 +7,12 @@ import sys
 from parser import read_data, sanitize_messages
 from NER import apply_ner, filter_messages
 from sentiment import analyze_sentiment, analyze_sentiments, get_sentiment_statistics
-from statistics import get_message_statistics, get_entity_statistics, get_most_common_words, compare_authors
+from analysis_statistics import get_message_statistics, get_entity_statistics, get_most_common_words, compare_authors
 from export import export_to_json, export_to_csv, export_to_excel, export_statistics_to_json
 from visualization import plot_entity_distribution, plot_sentiment_distribution, plot_message_length_distribution
 from config import load_config
 
-def main():
+def   main():
     """Ana program fonksiyonu"""
     try:
         # Yapılandırmayı yükle
